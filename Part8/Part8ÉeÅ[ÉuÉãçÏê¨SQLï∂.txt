@@ -1,0 +1,15 @@
+会員テーブル(friends):
+CREATE TABLE friends (no int(11), name varchar(50),birth date, email varchar(40), PRIMARY KEY(no));
+
+会員情報テーブル(friendinfo):
+CREATE TABLE friendinfo(no int(11),usrid varchar(30),usrpw varchar(10),msg text,upddate date,PRIMARY KEY(no));
+
+お料理日記テーブル(cookinglog):
+CREATE TABLE cookinglog(no int(11),logno int(11),title varchar(100),content text,pic varchar(200),upddate date,PRIMARY KEY(logno));
+
+お料理日記コメントテーブル(cookingres):
+CREATE TABLE cookingres(no int(11),logno int(11),resno int(11),tomono int(11),contentres text,readflg int(11),upddate date,PRIMARY KEY(resno));
+
+メッセージテーブル(friendmsg):
+CREATE TABLE friendmsg(no int(11),msgno int(11),tomono int(11),title varchar(100),content text,readflg int(11),upddate datetime, PRIMARY KEY(msgno));
+
